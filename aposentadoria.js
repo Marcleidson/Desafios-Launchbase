@@ -1,14 +1,18 @@
-const nome = 'Marcleidson'
-const sexo = 'M'
-const idade = 35
-const contribuicao = 18
+const nome = 'Maria'
+const sexo = 'F'
+const idade = 50
+const contribuicao = 35
 
-const regra2 = idade + contribuicao
-
-
-if ((sexo == 'M' && contribuicao >= 35) || (sexo == 'F' && contribuicao >= 30)) {
-  if ((sexo == 'M' && regra2 >= 95) || (sexo == 'F' && regra2 >= 85) {
-  console.log (`${nome}, você pode se aposentar.`
-  } else {
-  console.log (`${nome}, você não pode se aposentar.`)
+function calcular() {
+    if (sexo == 'M' & contribuicao > 34 | sexo == 'F' & contribuicao > 34) {
+        if (sexo == 'M' & (idade + contribuicao >= 95) | sexo == 'F' & (idade + contribuicao >= 85)) {
+            console.log (`${nome}, você pode se aposentar.`)
+        } else {
+            console.log (`${nome}, você não pode se aposentar.`)
+        }
+    }   else {
+        console.log (`${nome}, você não pode se aposentar.`)
+    }
 }
+
+calcular()
